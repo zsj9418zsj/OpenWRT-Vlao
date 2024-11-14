@@ -1,12 +1,3 @@
-#科学插件调整
-CONFIG_PACKAGE_luci-app-homeproxy=y
-#增加插件
-CONFIG_PACKAGE_luci-app-samba4=y
-CONFIG_PACKAGE_luci-app-wolplus=y
-CONFIG_PACKAGE_luci-app-tailscale=y
-CONFIG_PACKAGE_luci-app-autoreboot=y
-CONFIG_PACKAGE_luci-app-advancedplus=y
-CONFIG_PACKAGE_luci-theme-kucat=y
 #删除插件
 CONFIG_PACKAGE_luci-app-wol=n
 CONFIG_PACKAGE_luci-app-ddns=n
@@ -32,6 +23,10 @@ CONFIG_BUSYBOX_CUSTOM=y
 CONFIG_BUSYBOX_CONFIG_DEVMEM=y
 CONFIG_KERNEL_DEVMEM=y
 #内核调整
+CONFIG_PACKAGE_blockd=y
+CONFIG_PACKAGE_badblocks=y
+CONFIG_PACKAGE_usbutils=y
+CONFIG_PACKAGE_kmod-fs-cifs=y
 CONFIG_PACKAGE_kmod-fuse=y
 CONFIG_PACKAGE_kmod-tun=y
 CONFIG_PACKAGE_kmod-wireguard=y
@@ -83,3 +78,45 @@ CONFIG_PACKAGE_luci-lib-base=y
 CONFIG_PACKAGE_luci-lib-ipkg=y
 CONFIG_PACKAGE_luci-lua-runtime=y
 CONFIG_PACKAGE_wpad-openssl=y
+#科学插件调整
+CONFIG_PACKAGE_luci-app-openclash=y
+CONFIG_PACKAGE_luci-app-passwall=y
+CONFIG_PACKAGE_luci-app-cloudflared=y
+#增加插件
+CONFIG_PACKAGE_luci-app-upnp=y
+CONFIG_PACKAGE_luci-app-cpufreq=y
+CONFIG_PACKAGE_luci-app-ddns-go=y
+CONFIG_PACKAGE_luci-app-nlbwmon=y
+CONFIG_PACKAGE_luci-app-pushbot=y
+CONFIG_PACKAGE_luci-app-ttyd=y
+CONFIG_PACKAGE_luci-app-netdata=y
+#网络共享
+CONFIG_PACKAGE_luci-app-samba4=y
+#磁盘管理
+CONFIG_PACKAGE_luci-app-diskman=y
+#网络唤醒++
+CONFIG_PACKAGE_luci-app-wolplus=y
+#CONFIG_PACKAGE_luci-app-tailscale=y
+#定时重启
+CONFIG_PACKAGE_luci-app-autoreboot=y
+#进阶设置
+CONFIG_PACKAGE_luci-app-advancedplus=y
+# 多网盘存储alist
+#CONFIG_PACKAGE_luci-app-alist=y
+# 添加istore商店
+#CONFIG_PACKAGE_luci-app-istorex=y
+#添加网络向导
+#CONFIG_PACKAGE_luci-app-quickstart=y
+# 文件管理器
+CONFIG_PACKAGE_luci-app-fileassistant=y
+# 添加lucky大吉
+CONFIG_PACKAGE_luci-app-lucky=y
+# 添加docker
+CONFIG_PACKAGE_luci-app-dockerman=y
+CONFIG_PACKAGE_docker-compose=y
+#添加openssh-sftp-server使得finalshell得以看见文件列表
+CONFIG_PACKAGE_openssh-sftp-server=y
+# 广告拦截
+CONFIG_PACKAGE_luci-app-adguardhome=y
+CONFIG_PACKAGE_luci-app-smartdns=y
+
