@@ -52,6 +52,11 @@ UPDATE_PACKAGE "luci-app-alist" "sbwml/luci-app-alist" "main"
 rm -rf package/lucky
 UPDATE_PACKAGE "luci-app-lucky" "gdy666/luci-app-lucky" "main"
 
+# 全能推送
+UPDATE_PACKAGE "luci-app-pushbot" "zzsj0928/luci-app-pushbot" "master"
+
+# adguardhome
+UPDATE_PACKAGE "luci-app-adguardhome" "kongfl888/luci-app-adguardhome" "master"
 
 
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
