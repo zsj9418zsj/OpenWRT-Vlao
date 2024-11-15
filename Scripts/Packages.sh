@@ -41,6 +41,18 @@ UPDATE_PACKAGE "luci-app-gecoosac" "lwb1978/openwrt-gecoosac" "main"
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
 UPDATE_PACKAGE "luci-app-wolplus" "VIKINGYFY/packages" "main" "pkg"
 
+# 添加iStore商店
+UPDATE_PACKAGE "nas-packages" "linkease/nas-packages" "master"
+UPDATE_PACKAGE "nas-packages-luci" "linkease/nas-packages-luci" "main"
+
+# 添加alist网盘
+UPDATE_PACKAGE "luci-app-alist" "sbwml/luci-app-alist" "main"
+
+# 添加lucky大吉
+rm -rf package/lucky
+git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
+
+
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
 	UPDATE_PACKAGE "qmi-wwan" "immortalwrt/wwan-packages" "master" "pkg"
 fi
