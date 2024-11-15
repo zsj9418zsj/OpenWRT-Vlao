@@ -50,7 +50,8 @@ UPDATE_PACKAGE "luci-app-alist" "sbwml/luci-app-alist" "main"
 
 # 添加lucky大吉
 rm -rf package/lucky
-git clone  https://github.com/gdy666/luci-app-lucky.git package/lucky
+UPDATE_PACKAGE "luci-app-lucky" "gdy666/luci-app-lucky" "main"
+
 
 
 if [[ $WRT_REPO != *"immortalwrt"* ]]; then
