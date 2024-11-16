@@ -1,6 +1,6 @@
 #删除插件
-CONFIG_PACKAGE_ntfs3-mount=n
 CONFIG_PACKAGE_kmod-fs-ntfs3=n
+CONFIG_PACKAGE_ntfs3-mount=n
 CONFIG_PACKAGE_mount-utils=n
 CONFIG_PACKAGE_luci-app-wol=n
 CONFIG_PACKAGE_luci-app-ddns=n
