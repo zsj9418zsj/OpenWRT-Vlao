@@ -20,6 +20,11 @@ echo "CONFIG_PACKAGE_luci=y" >> ./.config
 echo "CONFIG_LUCI_LANG_zh_Hans=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-theme-$WRT_THEME=y" >> ./.config
 echo "CONFIG_PACKAGE_luci-app-$WRT_THEME-config=y" >> ./.config
+echo "CONFIG_PACKAGE_kmod-fs-ntfs3=n" >> ./.config
+echo "CONFIG_PACKAGE_kmod-fs-ntfs=n" >> ./.config
+echo "CONFIG_PACKAGE_ntfs3-mount=n" >> ./.config
+echo "CONFIG_PACKAGE_mount-utils=n" >> ./.config
+echo "CONFIG_PACKAGE_ntfs-3g=y" >> ./.config
 
 #手动调整的插件
 if [ -n "$WRT_PACKAGE" ]; then
